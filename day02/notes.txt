@@ -1,0 +1,4 @@
+> git clone https://github.com/pythoncpp/Python01.git
+
+> cd <project directory>
+> git pull
