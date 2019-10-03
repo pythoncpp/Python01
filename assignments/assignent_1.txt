@@ -1,0 +1,35 @@
+1. Create a program that asks the user to enter name and age. Print out a message which tells the user the year that they will turn 100 years old
+
+2. Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user
+
+3. Ask user to enter a number. Print whether the number is prime or not.
+
+4. Consider the list
+   
+   a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+   - print all members
+   - print members > 5
+   - print members which are multiples of 3
+   - print all members in sorted order
+   - print all members in reversed order
+   - print members at even positions
+
+5. Ask user to enter the max values user wants to add in a list. Ask user to enter a value and push that to the list. Print all the values on even and odd positions separately.
+
+6. Ask user to enter a string. Print the string in reverse order.
+
+7. Take two lists, say for example these two:
+
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+  Write a program to find the common elements between the lists
+
+8. Ask the user for a string and print out whether this string is a palindrome or not.  (A palindrome is a string that reads the same forwards and backwards.)
+
+9. Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list
+
+10. Write a program that asks the user how many Fibonacci numbers to generate and then generates them.  The Fibonacci sequence is a sequence of numbers where the next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: 1, 1, 2, 3, 5, 8, 13, …
+
+
