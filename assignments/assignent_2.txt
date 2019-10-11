@@ -1,0 +1,34 @@
+- ask user to enter the number. Write a program to generate multiples of input number using closure.
+
+- convert the above program using decorator
+
+- write a program to log the information of any function in a file in the following pattern using decorator
+
+  ------------------------------------------
+  Function name: __________
+  No of positional parameters: ______
+  No of named parameters: _____
+  Return value of the function: _____
+  ------------------------------------------
+  
+
+- write a program to read two files and combine the data into third file
+
+- write a program to reverse the data from a file to another file
+
+- write a program to get first 10 and last 10 characters from a file
+
+- write a function called showNumbers that takes a parameter called limit. It should print all the numbers between 0 and limit with a label to identify the even and odd numbers. For example, if the limit is 3, it should print:
+  0 EVEN
+  1 ODD
+  2 EVEN
+  3 ODD
+
+- write a function that returns the sum of multiples of 3 and 5 between 0 and limit (parameter). For example, if limit is 20, it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20
+
+- Write a function called show_stars(rows). If rows is 5, it should print the following:
+*
+**
+***
+****
+*****
