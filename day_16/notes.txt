@@ -1,0 +1,65 @@
+* Server
+- process which serves a request
+- types
+  - Web server 
+    - http, https
+    - Apache, glassfish, express, IIS
+  - Database Server
+    - RDBMS: MySQL, Oracle, MS SQL Server, DB2
+    - No SQL: mongoDB, Hive, HBase, CouchDB, CouchBase, Redis
+  - File Server
+  - Application Server -> Tomcat
+
+
+* JSON
+
+- e.g.
+
+  Data: meaningless/raw
+
+  10, user1, user1@test.com, 30, pune
+
+- e.g.
+
+  Information: meaningful
+  
+  id: 10, name: user1, email: user1@test.com, age: 30, address: pune
+
+
+- format/syntax to convert the data into information
+- object
+  - one entity
+  - created by using {}
+  - collection of key-value pairs
+  - similar to python dictionary
+  - e.g.
+
+    { "name": "user1", "age": 30, "address": "pune" }
+
+ 
+- array
+  - collection of JSON objects
+  - created by using []
+  - e.g.
+
+    [
+      { "name": "user1", "age": 30, "address": "pune" },
+      { "name": "user2", "age": 40, "address": "Mumbai" }
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
