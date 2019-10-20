@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+
+        <div class="form">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="">Full name</label>
+                        <input type="text" id="full_name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Address</label>
+                        <input type="text" id="address" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">User name</label>
+                        <input type="text" id="username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button onclick="registerUser()" class="btn btn-success">Register</button>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    
+        function registerUser() {
+            const username = $('#username').val()
+            const password = $('#password').val()
+            const full_name = $('#full_name').val()
+            const email = $('#email').val()
+            const address = $('#address').val()
+
+            // object
+            const body = {
+                "username": username,
+                "password": password,
+                "full_name": full_name,
+                "email": email,
+                "address": address
+            }
+
+            // send post request
+            $.ajax({
+                url: "http://localhost:4000/user/register",
+                method: 'POST',
+                data: JSON.stringify(body),
+                contentType: 'application/json',
+                success: function(response) {
+                    console.log('response: ', response)
+                },
+                error: function(error) {
+                    console.log('error: ', error)
+                }
+            })
+        }
+
+    
+    </script>
+</body>
+
+</html>

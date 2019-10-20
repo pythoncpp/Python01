@@ -1,0 +1,34 @@
+> create database final_app_db;
+
+> use final_app_db;
+
+> create table User (id integer primary key auto_increment, full_name varchar(100), username varchar(100), password varchar(50), email varchar(50), address varchar(100));
+
+> create table Product (id integer primary key auto_increment, title varchar(100), price float, description varchar(100));
+
+> describe User;
+
+> insert into User (full_name, username, password, email, address) values ('steve jobs', 'steve', 'steve', 'steve@apple.com', 'usa');
+
+> select * from User;
+
+> update User set address = 'india' where id = 1;
+
+> delete from User where id = 1;
+
+> select * from User where username = 'steve' and password = 'steve';
+
+> 
+
+
+* packages 
+
+> sudo pip3 install mysql-connector
+
+> sudo pip3 install flask
+
+> sudo pip3 install flask-cors
+
+> sudo pip3 install matplotlib
+
+
